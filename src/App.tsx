@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex items-center gap-3">
-            <img src="/dental-solutionz-icon.png" alt="Dental Solutionz Logo" className="h-15 w-15 object-contain" />
+            <img src={`${import.meta.env.BASE_URL}dental-solutionz-icon.png`} alt="Dental Solutionz Logo" className="h-15 w-15 object-contain" />
             <span className="text-2xl font-bold text-navy-500 tracking-tight">Dental Solutionz</span>
           </div>
           
@@ -89,7 +89,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
-        style={{ backgroundImage: "url('dental-hero.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')" }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}dental-hero.jpg')` }}
       >
         <div className="absolute inset-0 bg-navy-700/80"></div>
       </div>
@@ -172,9 +172,9 @@ const Services = () => {
 
 const EducationHub = () => {
   const articles = [
-    { title: "How Often Should You Really Get a Cleaning?", category: "Prevention", img: "/teeth-cleaning.jpg?auto=format&fit=crop&w=600&q=80" },
-    { title: "The Science Behind a Safe Teeth Whitening", category: "Cosmetic", img: "/teeth-whitening.jpg?auto=format&fit=crop&w=600&q=80" },
-    { title: "What to Expect During a Root Canal", category: "Treatment", img: "/root-canal.jpg?auto=format&fit=crop&w=600&q=80" },
+    { title: "How Often Should You Really Get a Cleaning?", category: "Prevention", img: `${import.meta.env.BASE_URL}teeth-cleaning.jpg` },
+    { title: "The Science Behind a Safe Teeth Whitening", category: "Cosmetic", img: `${import.meta.env.BASE_URL}teeth-whitening.jpg` },
+    { title: "What to Expect During a Root Canal", category: "Treatment", img: `${import.meta.env.BASE_URL}root-canal.jpg` },
   ];
 
   return (
@@ -265,11 +265,11 @@ const Gallery = () => {
              <div className="grid grid-cols-2 gap-2 mb-4">
                 <div className="aspect-square bg-gray-300 overflow-hidden rounded relative">
                   <span className="absolute top-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded font-medium z-10">Before</span>
-                  <img src="/before-porcelain-veneers.png?auto=format&fit=crop&w=400&q=80" alt="Before" className="w-full h-full object-cover grayscale opacity-80" />
+                  <img src={`${import.meta.env.BASE_URL}before-porcelain-veneers.png`} alt="Before" className="w-full h-full object-cover grayscale opacity-80" />
                 </div>
                 <div className="aspect-square bg-white overflow-hidden rounded relative">
                   <span className="absolute top-2 left-2 bg-navy-500 text-white text-xs px-2 py-1 rounded font-medium z-10">After</span>
-                  <img src="/after-porcelain-veneers.png?auto=format&fit=crop&w=400&q=80" alt="After" className="w-full h-full object-cover" />
+                  <img src={`${import.meta.env.BASE_URL}after-porcelain-veneers.png`} alt="After" className="w-full h-full object-cover" />
                 </div>
              </div>
              <h3 className="text-xl font-bold text-white text-center">Porcelain Veneers</h3>
@@ -285,11 +285,11 @@ const Gallery = () => {
              <div className="grid grid-cols-2 gap-2 mb-4">
                 <div className="aspect-square bg-gray-300 overflow-hidden rounded relative">
                   <span className="absolute top-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded font-medium z-10">Before</span>
-                  <img src="/before-white-teeth.png?auto=format&fit=crop&w=400&q=80" alt="Before" className="w-full h-full object-cover grayscale opacity-80" />
+                  <img src={`${import.meta.env.BASE_URL}before-white-teeth.png`} alt="Before" className="w-full h-full object-cover grayscale opacity-80" />
                 </div>
                 <div className="aspect-square bg-white overflow-hidden rounded relative">
                   <span className="absolute top-2 left-2 bg-navy-500 text-white text-xs px-2 py-1 rounded font-medium z-10">After</span>
-                  <img src="/after-white-teeth.png?auto=format&fit=crop&w=400&q=80" alt="After" className="w-full h-full object-cover" />
+                  <img src={`${import.meta.env.BASE_URL}after-white-teeth.png`} alt="After" className="w-full h-full object-cover" />
                 </div>
              </div>
              <h3 className="text-xl font-bold text-white text-center">Professional Whitening</h3>
